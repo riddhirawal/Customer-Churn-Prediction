@@ -1,19 +1,19 @@
-# Customer Churn Prediction Pipeline
+# Telecom Customer Churn Analysis
 
-## 📌 Project Overview
-Developed a machine learning solution to predict customer attrition for a telecommunications company. The project focuses on identifying high-risk customers to enable targeted retention strategies.
+## 📌 Business Problem
+Customer attrition is a major challenge in the telecommunications industry. This project aims to analyze historical customer data to identify the key drivers of churn and provide actionable insights for improving retention strategies.
 
 ## 🛠️ Tech Stack
-- **Languages:** Python (Pandas, NumPy)
-- **Machine Learning:** Scikit-learn (Random Forest, XGBoost, Logistic Regression)
-- **Sampling:** SMOTE (Synthetic Minority Over-sampling Technique)
-- **Visualization:** Seaborn, Matplotlib
+- **Language:** Python
+- **Libraries:** Pandas, Matplotlib, Seaborn
+- **Environment:** Jupyter Notebook
 
-## 🚀 Key Features & Workflow
-- **Data Engineering:** Cleaned 7,000+ records, handled missing values in total charges, and applied feature scaling.
-- **Imbalance Handling:** Implemented **SMOTE** to address class imbalance, significantly improving model recall for minority churn classes.
-- **Model Evaluation:** Benchmarked multiple algorithms; the **Random Forest** model emerged as the top performer with a ~15% increase in accuracy over baseline.
+## 🔍 Exploratory Data Analysis (EDA) Highlights
+- **Statistical Summary:** Performed descriptive statistics to understand the distribution of tenure and monthly charges.
+- **Visual Analysis:** Created count plots and distribution plots to analyze Churn vs. Contract Type, Payment Method, and Gender.
+- **Correlation Mapping:** Developed a heatmap to identify linear relationships between numerical features and customer exits.
 
-## 📊 Business Insights
-- **Contract Type:** Month-to-month subscribers exhibit the highest churn risk.
-- **Service Trends:** Fiber optic users and customers without tech support are more likely to leave, suggesting a need for service bundling.
+## 💡 Key Insights
+- **Contract Type:** Month-to-month subscribers represent the highest churn risk.
+- **Payment Method:** Electronic check users show a significantly higher churn rate compared to automated methods.
+- **Tenure:** A clear "Stability Zone" exists; churn probability drops significantly after the first 12 months of service.
